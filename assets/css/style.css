@@ -309,53 +309,57 @@ pre code {
 	font-size: 65%;
 }
 
+
+
 /*** Colors ***/
 
 html, body {
-	background-color: #fdf6e3;
-	color: #839496;
+	background-color: #fff;
+	color: #4d4d4c;
 }
 
 a, a:visited, a:active {
-	color: #2aa198;
-	border-color: #eee8d5;
+	color: #4271ae;
+	border-color: #efefef;
 }
 
 a:hover {
-	background-color: #eee8d5;
-	border-color: #eee8d5;
-	color: #2aa198;
+	background-color: #efefef;
+	border-color: #efefef;
+	color: #4271ae;
 }
 
 h1, h2, h3 {
-	color: #cb4b16;
+	color: #c82829;
 }
 
 h1 a, h1 a:visited, h1 a:active {
-	color: #cb4b16;
+	color: #c82829;
 }
 
 h1 a:hover {
-	background-color: #eee8d5;
-	border-color: #eee8d5;
+	background-color: #efefef;
+	border-color: #efefef;
 }
 
 article h1 a.anchor {
-	color: #2aa198;
+	color: #4271ae;
 }
 
 blockquote {
-	border-color: #cb4b16;
+	border-color: #c82829;
 }
 
 #sidebar a:hover {
-	color: #2aa198;
-	background-color: #eee8d5;
+	color: #4271ae;
+	background-color: #efefef;
 }
 
 #footer {
-	border-color: #eee8d5;
+	border-color: #efefef;
 }
+
+
 
 /*** Syntax Highlighting ***/
 
