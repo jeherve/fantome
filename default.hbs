@@ -82,9 +82,12 @@
 	{{ghost_foot}}
 
 	<script src="/assets/js/jquery.mobilemenu.min.js"></script>
+	<script src="/assets/js/jquery.fitvids.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
+			// Responsive videos
+			$(".post-content").fitVids();
 		});
 	</script>
 	<script>
