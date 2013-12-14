@@ -38,7 +38,7 @@
 				<ul>
 					<li><a href="/">Home</a></li>
 					<li><a href="http://twitter.com/jeherve">Twitter</a></li>
-					<li><a href="http://jeremyherve.com">Personal blog</a></li>
+					<li><a href="http://jeremyherve.com/">Personal blog</a></li>
 					<li><a href="/rss/">RSS</a></li>
 				</ul>
 			</nav>
@@ -46,12 +46,12 @@
 		{{#post}}
 		{{#if author}}
 			<div class="bio">
-				<img class="avatar" src="{{author.image}}" />
+				<a href="http://jeremyherve.com/"><img class="avatar" src="{{author.image}}" /></a>
 				<h3>{{author.name}}</h3>
 				<p>{{author.bio}}</p>
 			</div><!-- .bio -->
 		{{/if}}
-		{{/post}}	
+		{{/post}}
 		</div><!-- .sidebar -->
 
 		<div id="content">
