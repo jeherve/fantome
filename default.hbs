@@ -2,15 +2,36 @@
 <html>
 <head>
 
-	<meta charset="UTF-8">
- 	<title>{{meta_title}}</title>
- 	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
+	<title>{{meta_title}}</title>
+	<meta name="description" content="{{meta_description}}" />
+	<!-- FB Open Graph -->
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:site_name" content="{{meta_title}}" />
+	<meta property="fb:admins" content="611546862" />
+	{{#post}}
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="{{title}}" />
+	<meta property="og:url" content="{{url absolute='true'}}" />
+	<meta property="og:description" content="{{excerpt}}&hellip;" />
+	{{/post}}
+	<!-- Google Authorship -->
+	<link rel="author" href="https://plus.google.com/114947731091250999907" title="Jeremy Herve on Google+" /> 
+	<!-- Twitter Cards -->
+	<meta name="twitter:site" content="@jeherve" />
+	{{#post}}
+	<meta name="twitter:card" content="summary" />
+	{{/post}}
 
- 	<!--[if lt IE 9]>
+	<meta name="viewport" content="width=device-width">
+
+	<!--[if lt IE 9]>
 		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
+	<link rel="shortcut icon" href="/assets/img/favicon.png" />
 	<link href="/assets/css/style.css" rel="stylesheet" />
 
 	<script src="/assets/js/highlight.pack.js"></script>
