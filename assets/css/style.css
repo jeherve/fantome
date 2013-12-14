@@ -330,3 +330,106 @@ pre code {
 .icon-anchor {
 	font-size: 65%;
 }
+
+/*** Colors ***/
+
+html, body {
+	background-color: #fdf6e3;
+	color: #839496;
+}
+
+a, a:visited, a:active {
+	color: #2aa198;
+	border-color: #eee8d5;
+}
+
+a:hover {
+	background-color: #eee8d5;
+	border-color: #eee8d5;
+	color: #2aa198;
+}
+
+h1, h2, h3 {
+	color: #cb4b16;
+}
+
+h1 a, h1 a:visited, h1 a:active {
+	color: #cb4b16;
+}
+
+h1 a:hover {
+	background-color: #eee8d5;
+	border-color: #eee8d5;
+}
+
+article h1 a.anchor {
+	color: #2aa198;
+}
+
+blockquote {
+	border-color: #cb4b16;
+}
+
+#sidebar a:hover {
+	color: #2aa198;
+	background-color: #eee8d5;
+}
+
+#footer {
+	border-color: #eee8d5;
+}
+
+/*** Syntax Highlighting ***/
+
+/* Tomorrow Night Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+.tomorrow-comment, pre .comment, pre .title {
+  color: #969896;
+}
+
+.tomorrow-red, pre .variable, pre .attribute, pre .tag, pre .regexp, pre .ruby .constant, pre .xml .tag .title, pre .xml .pi, pre .xml .doctype, pre .html .doctype, pre .css .id, pre .css .class, pre .css .pseudo {
+  color: #cc6666;
+}
+
+.tomorrow-orange, pre .number, pre .preprocessor, pre .pragma, pre .built_in, pre .literal, pre .params, pre .constant {
+  color: #de935f;
+}
+
+.tomorrow-yellow, pre .ruby .class .title, pre .css .rules .attribute {
+  color: #f0c674;
+}
+
+.tomorrow-green, pre .string, pre .value, pre .inheritance, pre .header, pre .ruby .symbol, pre .xml .cdata {
+  color: #b5bd68;
+}
+
+.tomorrow-aqua, pre .css .hexcolor {
+  color: #8abeb7;
+}
+
+.tomorrow-blue, pre .function, pre .python .decorator, pre .python .title, pre .ruby .function .title, pre .ruby .title .keyword, pre .perl .sub, pre .javascript .title, pre .coffeescript .title {
+  color: #81a2be;
+}
+
+.tomorrow-purple, pre .keyword, pre .javascript .function {
+  color: #b294bb;
+}
+
+pre code {
+  display: block;
+  background: #1d1f21;
+  color: #c5c8c6;
+  padding: 0.5em;
+}
+
+pre .coffeescript .javascript,
+pre .javascript .xml,
+pre .tex .formula,
+pre .xml .javascript,
+pre .xml .vbscript,
+pre .xml .css,
+pre .xml .cdata {
+  opacity: 0.5;
+}
