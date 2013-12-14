@@ -2,96 +2,75 @@
 <html>
 <head>
 
-  <meta charset="UTF-8">
-  <title>{{meta_title}}</title>
-  <meta name="viewport" content="width=device-width">
+	<meta charset="UTF-8">
+ 	<title>{{meta_title}}</title>
+ 	<meta name="viewport" content="width=device-width">
 
-  <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
 
-  <link href="/assets/css/style.css" rel="stylesheet" />
-  <link href="/assets/css/colors-light.css" rel="stylesheet" />
+ 	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 
-  {{ghost_head}}
+	<link href="/assets/css/style.css" rel="stylesheet" />
+	<link href="/assets/css/colors-light.css" rel="stylesheet" />
+
+	{{ghost_head}}
 
 </head>
-
 <body class="{{body_class}}">
 
+{{#if @blog.cover}}
+	<div id="coverimg" style="background-image: url({{@blog.cover}})"></div>
+{{/if}}
 
+	<header id="header">
+	{{#if @blog.logo}}
+		<a id="blog-logo" href="/"><img src="{{@blog.logo}}" /></a>
+	{{else}}
+		<h1><a href="/"><i class="icon-sun"></i> {{@blog.title}}</a></h1>
+	{{/if}}
+	</header>
 
-  {{#if @blog.cover}}
-    <div id="coverimg" style="background-image: url({{@blog.cover}})"></div>
-  {{/if}}
+	<div id="page">
 
+		<div id="sidebar">
+			<nav>
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="http://twitter.com/jeherve">Twitter</a></li>
+					<li><a href="http://jeremyherve.com">Personal blog</a></li>
+					<li><a href="/rss/">RSS</a></li>
+				</ul>
+			</nav>
 
+		{{#post}}
+		{{#if author}}
+			<div class="bio">
+				<img class="avatar" src="{{author.image}}" />
+				<h3>{{author.name}}</h3>
+				<p>{{author.bio}}</p>
+			</div><!-- .bio -->
+		{{/if}}
+		{{/post}}	
+		</div><!-- .sidebar -->
 
-  <header id="header">
-    {{#if @blog.logo}}
-      <a id="blog-logo" href="/"><img src="{{@blog.logo}}" /></a>
-    {{else}}
-      <h1><a href="/"><i class="icon-sun"></i> {{@blog.title}}</a></h1>
-    {{/if}}
-  </header>
+		<div id="content">
+			{{{body}}}
+		</div><!-- #content -->
 
+	</div><!-- #page -->
 
+	<footer id="footer">
+		<p class="copyright">Copyright &copy; 2013 {{@blog.title}}.</p>
+	</footer>
 
-  <div id="page">
+	{{ghost_foot}}
 
-
-
-    <div id="sidebar">
-
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="http://twitter.com/jeherve">Twitter</a></li>
-          <li><a href="http://jeremyherve.com">Personal blog</a></li>
-          <li><a href="/rss/">RSS</a></li>
-        </ul>
-      </nav>
-
-      {{#post}}
-      {{#if author}}
-        <div class="bio">
-          <img class="avatar" src="{{author.image}}" />
-          <h3>{{author.name}}</h3>
-          <p>{{author.bio}}</p>
-        </div>
-      {{/if}}
-      {{/post}}
-
-    </div>
-
-
-
-    <div id="content">
-      {{{body}}}
-    </div>
-
-
-
-  </div>
-
-
-
-  <footer id="footer">
-	<p class="copyright">Copyright &copy; 2013 {{@blog.title}}.</p>
-  </footer>
-
-
-
-  {{ghost_foot}}
-
-  <script src="/assets/js/jquery.mobilemenu.min.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
-    });
-  </script>
-
-
-
+	<script src="/assets/js/jquery.mobilemenu.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
+		});
+	</script>
 </body>
 </html>
