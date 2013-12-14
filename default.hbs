@@ -46,17 +46,17 @@
 	<div id="coverimg" style="background-image: url({{@blog.cover}})"></div>
 {{/if}}
 
-	<header id="header">
-	{{#if @blog.logo}}
-		<a id="blog-logo" href="/"><img src="{{@blog.logo}}" /></a>
-	{{else}}
-		<h1><a href="/"><i class="icon-sun"></i> {{@blog.title}}</a></h1>
-	{{/if}}
-	</header>
-
 	<div id="page">
 
 		<div id="sidebar">
+		{{#if author}}
+			<div class="bio">
+				<a href="/"><img class="avatar" src="{{author.image}}" /></a>
+				<h3>{{author.name}}</h3>
+				<p>{{author.bio}}</p>
+			</div><!-- .bio -->
+		{{/if}}
+
 			<nav>
 				<ul>
 					<li><a href="/">Home</a></li>
@@ -65,16 +65,6 @@
 					<li><a href="/rss/">RSS</a></li>
 				</ul>
 			</nav>
-
-		{{#post}}
-		{{#if author}}
-			<div class="bio">
-				<a href="http://jeremyherve.com/"><img class="avatar" src="{{author.image}}" /></a>
-				<h3>{{author.name}}</h3>
-				<p>{{author.bio}}</p>
-			</div><!-- .bio -->
-		{{/if}}
-		{{/post}}
 		</div><!-- .sidebar -->
 
 		<div id="content">
