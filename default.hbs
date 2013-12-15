@@ -34,9 +34,6 @@
 	<link rel="shortcut icon" href="/assets/img/favicon.png" />
 	<link href="/assets/css/style.css" rel="stylesheet" />
 
-	<script src="/assets/js/highlight.pack.js"></script>
-	<script>hljs.initHighlightingOnLoad();</script>
-
 	{{ghost_head}}
 
 </head>
@@ -46,28 +43,37 @@
 	<div id="coverimg" style="background-image: url({{@blog.cover}})"></div>
 {{/if}}
 
-	<div id="page">
+	<header>
 
-		<div id="sidebar">
-		{{#post}}
-		{{#if author}}
-			<div class="bio">
-				<a href="/"><img class="avatar" src="{{author.image}}" /></a>
-				<h3>{{author.name}}</h3>
-				<p>{{author.bio}}</p>
-			</div><!-- .bio -->
+		{{#if @blog.logo}}
+		<a id="blog-logo" href="/"><img src="{{@blog.logo}}" /></a>
+		{{else}}
+		<h1><a href="/">{{@blog.title}}</a></h1>
 		{{/if}}
-		{{/post}}
 
-			<nav>
-				<ul>
-					<li><a href="/">Home</a></li>
-					<li><a href="http://twitter.com/jeherve">Twitter</a></li>
-					<li><a href="http://jeremyherve.com/">Personal blog</a></li>
-					<li><a href="/rss/">RSS</a></li>
-				</ul>
-			</nav>
-		</div><!-- .sidebar -->
+		<nav>
+			<ul>
+				<li><a rel="me" class="twitter" href="http://twitter.com/jeherve">
+					<span class="screen-reader-text">Twitter</span>
+				</a></li>
+				<li><a rel="me" class="wordpress" href="http://profiles.wordpress.org/jeherve">
+					<span class="screen-reader-text">WordPress</span>
+				</a></li>
+				<li><a rel="me" class="github" href="https://github.com/jeherve/">
+					<span class="screen-reader-text">GitHub</span>
+				</a></li>
+				<li><a rel="me" class="personal" href="http://jeremyherve.com/">
+					<span class="screen-reader-text">Personal blog</span>
+				</a></li>
+				<li><a class="rss" href="/rss/">
+					<span class="screen-reader-text">RSS</span>
+				</a></li>
+			</ul>
+		</nav>
+
+	</header>
+
+	<div id="page">
 
 		<div id="content">
 			{{{body}}}
@@ -76,18 +82,20 @@
 	</div><!-- #page -->
 
 	<footer id="footer">
-		<p class="copyright">Copyright &copy; 2013 {{@blog.title}}.</p>
+		<p class="copyright">Copyright &copy; 2013 {{@blog.title}}. Powered by <a href="http://ghost.org">Ghost</a>.</p>
 	</footer>
 
 	{{ghost_foot}}
 
 	<script src="/assets/js/jquery.mobilemenu.min.js"></script>
 	<script src="/assets/js/jquery.fitvids.js"></script>
+	<script src="/assets/js/highlight.pack.js"></script>
 	<script>
 		$(document).ready(function(){
 			$('#sidebar nav ul').mobileMenu({'topOptionText': 'Menu', 'prependTo': '#sidebar nav'});
 			// Responsive videos
 			$(".post-content").fitVids();
+			hljs.initHighlightingOnLoad();
 		});
 	</script>
 	<script>
