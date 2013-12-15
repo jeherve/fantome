@@ -237,17 +237,18 @@ header {
 	border-bottom: 4px solid #8e908c;
 }
 
+#content {
+	width: 640px;
+	margin: 0 auto;
+}
+
 #footer {
 	width: 640px;
 	margin: 50px auto 20px auto;
 	padding-top: 10px;
 	font-size: 0.85em;
 	border-top: 1px solid #8e908c;
-}
-
-#content {
-	width: 640px;
-	margin: 0 auto;
+	text-align: right;
 }
 
 
