@@ -14,8 +14,8 @@ Fantome is based on the Solar Theme https://github.com/redwallhp/solar-theme-gho
 /* = Table Of Contents
 --------------------------------------------------------------
 Reset
-General
 Fonts
+General
 Page structure
 Header
 Posts
@@ -59,89 +59,10 @@ table {
 }
 
 
-/* =General
--------------------------------------------------------------- */
-
-body {
-	font-family: Verdana, serif;
-	font-size: 13px;
-	line-height: 1.7;
-}
-
-a, a:active, a:visited {
-	text-decoration: none;
-	border-bottom: 1px solid #839496;
-	padding-bottom: 2px;
-}
-a:hover {
-	background-color: #839496;
-	color: #000000;
-}
-
-p { margin-bottom: 15px; }
-ul, ol { padding: 0 0 18px 30px; }
-ol li, ul li { margin-top: 10px; margin-bottom: 10px; }
-em, i { font-style: italic; }
-strong, b { font-weight: bold; }
-small { font-size: 0.85em; }
-sup { vertical-align: super; font-size: 0.85em; }
-sub { vertical-align: sub; font-size: 0.85em; }
-
-code {
-    font: 0.85em Monaco, Courier, Monospace;
-}
-
-blockquote {
-    margin: 22px 22px;
-    padding: 0 20px;
-    border-left: 2px solid #000000;
-    font-size: 1.2em;
-    font-style: italic;
-    line-height: 1.5em;
-}
-
-acronym, abbr {
-	cursor: help;
-	letter-spacing: 1px;
-	border-bottom: 1px dashed;
-}
-
-h1 {
-	font-size: 17px;
-	margin: 0 0 10px 0;
-}
-h2 {
-	font-size: 15px;
-	margin: 0 0 10px 0;
-}
-h3 {
-	font-size: 14px;
-	margin: 0 0 10px 0;
-}
-
-/* Text meant only for screen readers */
-.screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-}
-
-/*** Useful Classes ***/
-.clear { clear: both; }
-.float-left { float: left; }
-.float-right { float: right; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-.text-center { text-align: center; }
-.text-justify { text-align: justify; }
-.img-left { float: left; margin: 4px 10px 4px 0; }
-.img-right { float: right; margin: 4px 0 4px 10px; }
-.img-middle { vertical-align: middle; }
-.nopadding { padding: 0; }
-.nounderline { text-decoration: underline; }
-
-
 /* = Fonts
 -------------------------------------------------------------- */
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900|Open+Sans:400,700);
 
 @font-face {
     font-family: 'Genericons';
@@ -209,6 +130,110 @@ header nav ul li a:before {
 .status:before {          content: '\f105'; }
 .quote:before {           content: '\f106'; }
 .link:before {            content: '\f107'; }
+
+
+/* =General
+-------------------------------------------------------------- */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+a, a:active, a:visited {
+	text-decoration: none;
+	border-bottom: 1px solid #839496;
+	padding-bottom: 2px;
+}
+a:hover {
+	background-color: #839496;
+	color: #000000;
+}
+
+p { margin-bottom: 15px; }
+ul, ol { padding: 0 0 18px 30px; }
+ol li, ul li { margin-top: 10px; margin-bottom: 10px; }
+em, i { font-style: italic; }
+strong, b { font-weight: bold; }
+small { font-size: 0.85em; }
+sup { vertical-align: super; font-size: 0.85em; }
+sub { vertical-align: sub; font-size: 0.85em; }
+
+code {
+    font: 0.85em Monaco, Courier, Monospace;
+}
+
+blockquote {
+    margin: 22px 22px;
+    padding: 0 20px;
+    border-left: 2px solid #000000;
+    font-size: 1.2em;
+    font-style: italic;
+    line-height: 1.5em;
+}
+
+acronym, abbr {
+	cursor: help;
+	letter-spacing: 1px;
+	border-bottom: 1px dashed;
+}
+
+h1, h2, h3 {
+	font-family: "Lato", sans-serif;
+	font-weight: 700;
+}
+
+article h1 { 
+	font-size: 2.4rem;
+	line-height: 2.8rem;
+	margin: 0 0 0.2rem 0;
+	font-weight: 900;
+	baseline-shift: 10px;
+	margin-top: -0.7rem;
+	padding-bottom: 0.7rem;
+}
+@media screen and (max-width: 480px){
+	article h1 {
+		text-align:center;
+	}
+}
+
+h2 {
+	font-size:3.6rem;
+	line-height:5.2rem;
+	margin:5.2rem 0 2.6rem 0;
+	margin-top:-1.4rem;
+	padding-bottom:1.4rem;
+}
+
+h3 {
+	font-size:2.4rem;
+	line-height:2.6rem;
+	margin:5.2rem 0 2.6rem 0;
+	margin-top:2.9rem;
+	padding-bottom:2.3rem;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+}
+
+/*** Useful Classes ***/
+.clear { clear: both; }
+.float-left { float: left; }
+.float-right { float: right; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-justify { text-align: justify; }
+.img-left { float: left; margin: 4px 10px 4px 0; }
+.img-right { float: right; margin: 4px 0 4px 10px; }
+.img-middle { vertical-align: middle; }
+.nopadding { padding: 0; }
+.nounderline { text-decoration: underline; }
 
 
 /* = Page structure
@@ -301,10 +326,6 @@ article {
 	margin-bottom: 40px;
 }
 
-article h1 {
-	font-size: 17px;
-	margin: 0 0 10px 0;
-}
 article h1 a {
 	border: none;
 }
