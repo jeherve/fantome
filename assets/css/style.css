@@ -254,6 +254,12 @@ header {
 /* = Header
 -------------------------------------------------------------- */
 
+header h1,
+header #blog-logo {
+	float: left;
+}
+
+
 header nav {
 	display: inline-block;
 }
