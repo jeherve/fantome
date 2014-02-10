@@ -318,6 +318,38 @@ header nav ul li a:before {
 	height: 32px;
 }
 
+/* Author area */
+footer .author {
+	background: #1d1f21;
+	border-radius: 3px 3px 3px 3px;
+	border: 1px solid #2d6472;
+	padding: 10px;
+	text-align: left;
+	color: #c5c8c6;
+}
+
+footer .author img.avatar-image {
+	float: left;
+	width: 55px;
+	height: 55px;
+	border-radius: 55px;
+	margin: 15px;
+}
+
+footer .author .author-name {
+	font-size: 2.5em;
+	line-height: 2em;
+}
+
+footer .author .author-bio {
+	margin-left: 15px;
+}
+
+footer .author .author-location {
+	margin-left: 15px;
+	font-size: 0.75em;
+}
+
 
 /* = Posts
 -------------------------------------------------------------- */

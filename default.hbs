@@ -43,35 +43,7 @@
 	<div id="coverimg" style="background-image: url({{@blog.cover}})"></div>
 {{/if}}
 
-	<header>
-
-		{{#if @blog.logo}}
-		<a id="blog-logo" href="/"><img src="{{@blog.logo}}" /></a>
-		{{else}}
-		<h1><a href="/">{{@blog.title}}</a></h1>
-		{{/if}}
-
-		<nav>
-			<ul>
-				<li><a rel="me" class="twitter" href="http://twitter.com/jeherve">
-					<span class="screen-reader-text">Twitter</span>
-				</a></li>
-				<li><a rel="me" class="wordpress" href="http://profiles.wordpress.org/jeherve">
-					<span class="screen-reader-text">WordPress</span>
-				</a></li>
-				<li><a rel="me" class="github" href="https://github.com/jeherve/">
-					<span class="screen-reader-text">GitHub</span>
-				</a></li>
-				<li><a rel="me" class="personal" href="http://jeremyherve.com/">
-					<span class="screen-reader-text">Personal blog</span>
-				</a></li>
-				<li><a class="rss" href="/rss/">
-					<span class="screen-reader-text">RSS</span>
-				</a></li>
-			</ul>
-		</nav>
-
-	</header>
+	{{> header}}
 
 	<div id="page">
 
@@ -82,6 +54,19 @@
 	</div><!-- #page -->
 
 	<footer id="footer">
+		<!-- Author info -->
+		{{#if post}}
+			{{#post}}
+				{{> author}}
+			{{/post}}
+		{{else}}
+			{{#foreach posts}}
+				{{#if @first}}
+				    {{> author}}
+				{{/if}}
+			{{/foreach}}
+		{{/if}}
+
 		<p class="copyright">Copyright &copy; 2013 {{@blog.title}}. Powered by <a href="http://ghost.org">Ghost</a>.</p>
 	</footer>
 

@@ -1,0 +1,13 @@
+<header>
+
+	<!-- Blog logo -->
+	{{#if @blog.logo}}
+		<a id="blog-logo" href="/"><img src="{{@blog.logo}}" /></a>
+	{{else}}
+		<h1><a href="/">{{@blog.title}}</a></h1>
+	{{/if}}
+
+	<!-- Social media links -->
+	{{> social}}
+
+</header>
