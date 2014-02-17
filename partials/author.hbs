@@ -1,6 +1,15 @@
 <div class="author">
+
 	<figure class="author-avatar"><img class="avatar-image" src="{{author.image}}" alt="{{author.name}}"></figure>
-	<p class="author-name">{{author.name}}</p>
+
+	<h3 class="author-name">{{author.name}}</h3>
+	<!-- Social media links -->
+	{{> social}}
+
 	<p class="author-bio">{{author.bio}}</p>
-	{{#if author.location}} <p class="author-location">{{author.location}}</p> {{/if}}
-</div>
+
+	{{#if author.location}}
+	<p class="author-location">{{author.location}}</p>
+	{{/if}}
+
+</div><!-- .author -->

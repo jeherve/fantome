@@ -20,6 +20,7 @@ Page structure
 Header
 Posts
 Pagination
+Footer
 Colors
 Media Queries
 Syntax Highlighting
@@ -84,7 +85,7 @@ table {
 
 .genericon,
 .post .meta:before,
-header nav ul li a:before {
+footer nav ul li a:before {
 	display: inline-block;
 	width: 16px;
 	height: 16px;
@@ -108,13 +109,13 @@ header nav ul li a:before {
 	*display: inline;
 }
 
-.twitter:before {         content: '\f202'; }
-.github:before {          content: '\f200'; }
-.wordpress:before {       content: '\f205'; }
-.rss:before {             content: '\f413'; }
+.twitter:before {         content: '\f202'; color: #55ACEE; }
+.github:before {          content: '\f200'; color: #ffffff; }
+.wordpress:before {       content: '\f205'; color: #21759b; }
+.rss:before {             content: '\f413'; color: #d54e21; }
 .personal:before {        content: '\f442'; }
 
-.googleplus:before {      content: '\f206'; }
+.googleplus:before {      content: '\f206'; color: #D34836; }
 .pocket:before {          content: '\f224'; }
 
 .summary:before {         content: '\f425'; }
@@ -287,70 +288,6 @@ header #blog-logo {
 }
 
 
-header nav {
-	display: inline-block;
-}
-
-header nav ul {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-header nav li {
-	display: inline;
-}
-
-header nav a {
-	border-bottom: 0.35rem solid transparent;
-	color: #4271ae;
-	-webkit-transition: border-color .25s ease-in-out;
-	display: inline-block;
-	position: relative;
-	text-align: center;
-	width: 32px;
-	height: 32px;
-}
-
-header nav ul li a:before {
-	font-size: 32px;
-	width: 32px;
-	height: 32px;
-}
-
-/* Author area */
-footer .author {
-	background: #1d1f21;
-	border-radius: 3px 3px 3px 3px;
-	border: 1px solid #2d6472;
-	padding: 10px;
-	text-align: left;
-	color: #c5c8c6;
-}
-
-footer .author img.avatar-image {
-	float: left;
-	width: 55px;
-	height: 55px;
-	border-radius: 55px;
-	margin: 15px;
-}
-
-footer .author .author-name {
-	font-size: 2.5em;
-	line-height: 2em;
-}
-
-footer .author .author-bio {
-	margin-left: 15px;
-}
-
-footer .author .author-location {
-	margin-left: 15px;
-	font-size: 0.75em;
-}
-
-
 /* = Posts
 -------------------------------------------------------------- */
 
@@ -414,6 +351,73 @@ img.center {
 
 .postnavigation .right {
 	float: right;
+}
+
+
+/* = Footer
+-------------------------------------------------------------- */
+
+footer nav {
+	display: inline-block;
+}
+
+footer nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer nav li {
+	display: inline;
+}
+
+footer nav a {
+	border-bottom: 0.35rem solid transparent;
+	color: #4271ae;
+	-webkit-transition: border-color .25s ease-in-out;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	width: 32px;
+	height: 32px;
+}
+
+footer nav ul li a:before {
+	font-size: 32px;
+	width: 32px;
+	height: 32px;
+}
+
+/* Author area */
+footer .author {
+	background: #1d1f21;
+	border-radius: 3px 3px 3px 3px;
+	border: 1px solid #2d6472;
+	padding: 10px;
+	text-align: left;
+	color: #c5c8c6;
+}
+
+footer .author img.avatar-image {
+	float: left;
+	width: 55px;
+	height: 55px;
+	border-radius: 55px;
+	margin: 15px;
+}
+
+footer .author .author-name {
+	font-size: 2.5em;
+	line-height: 2em;
+}
+
+footer .author .author-bio {
+	margin-left: 15px;
+}
+
+footer .author .author-location {
+	margin-left: 15px;
+	font-size: 0.75em;
 }
 
 

@@ -39,10 +39,6 @@
 </head>
 <body class="{{body_class}}">
 
-{{#if @blog.cover}}
-	<div id="coverimg" style="background-image: url({{@blog.cover}})"></div>
-{{/if}}
-
 	{{> header}}
 
 	<div id="page">
@@ -53,22 +49,7 @@
 
 	</div><!-- #page -->
 
-	<footer id="footer">
-		<!-- Author info -->
-		{{#if post}}
-			{{#post}}
-				{{> author}}
-			{{/post}}
-		{{else}}
-			{{#foreach posts}}
-				{{#if @first}}
-				    {{> author}}
-				{{/if}}
-			{{/foreach}}
-		{{/if}}
-
-		<p class="copyright">Copyright &copy; 2014 {{@blog.title}}. Powered by <a href="http://ghost.org">Ghost</a>.</p>
-	</footer>
+	{{> footer}}
 
 	{{ghost_foot}}
 

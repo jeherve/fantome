@@ -1,3 +1,7 @@
+{{#if @blog.cover}}
+	<div id="coverimg" style="background-image: url({{@blog.cover}})"></div>
+{{/if}}
+
 <header>
 
 	<!-- Blog logo -->
@@ -6,8 +10,5 @@
 	{{else}}
 		<h1><a href="/">{{@blog.title}}</a></h1>
 	{{/if}}
-
-	<!-- Social media links -->
-	{{> social}}
 
 </header>
