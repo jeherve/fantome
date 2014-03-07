@@ -35,6 +35,8 @@ Fantome uses some awesome tools:
 - **For its responsive video embed support:** [FitVids.js](https://github.com/davatron5000/FitVids.js)
 - **For its fancy icons:** [Genericons](http://genericons.com/)
 
+It's also based off another Ghost theme, [solar-theme-ghost](https://github.com/redwallhp/solar-theme-ghost), which I liked because of its colors. 
+
 To-Do
 -----
 
