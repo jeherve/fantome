@@ -1,8 +1,4 @@
-{{#if @blog.cover}}
-	<div id="coverimg" style="background-image: url({{@blog.cover}})"></div>
-{{/if}}
-
-<header>
+<header {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
 
 	<!-- Blog logo -->
 	{{#if @blog.logo}}

@@ -277,9 +277,9 @@ h3 {
 -------------------------------------------------------------- */
 
 header {
-	background: #1d1f21;
+	background: #d6d6d6;
 	background-position: 50% 50%;
-	webkit-background-size: cover;
+	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover; 
@@ -294,9 +294,20 @@ header h1 {
 	text-transform: uppercase;
 }
 
-header h1 a {
+header h1 a,
+header h1 a:active,
+header h1 a:visited {
+	background: #d6d6d6;
 	border-bottom: 0 none;
+	border-radius: 3px;
+	color: #4271ae;
+	padding: 0.3em 0.7em;
 	text-decoration: none;
+}
+
+header h1 a:hover {
+	color: #c82829;
+	-webkit-transition: color .25s ease-in-out;
 }
 
 
