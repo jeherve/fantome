@@ -7,7 +7,6 @@ It's a simple theme, including some features you may find useful:
 - Beautiful Syntax Highlighting
 - Responsive video embeds
 - Responsive everything, in fact!
-- Google+ Comments
 
 Installation
 --------------
