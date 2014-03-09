@@ -7,6 +7,7 @@ It's a simple theme, including some features you may find useful:
 - Beautiful Syntax Highlighting
 - Responsive video embeds
 - Responsive everything, in fact!
+- Featured Images
 
 Installation
 --------------
@@ -24,6 +25,8 @@ Customization
 -------------
 
 Fantome supports Ghost's logo and cover image features, and will work perfectly fine with or without them. If you wish to upload a cover image, it will appear above the rest of the page. An uploaded logo replaces the textual blog name.
+
+Ghost doesn't support Featured Images out of the box yet. In this theme, if you add an image and give is the `featured-image` alt attribute, it will replace your header image.
 
 Credits
 -------------
