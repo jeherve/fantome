@@ -9,8 +9,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 This theme is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 
-Fantome is based on the Solar Theme https://github.com/redwallhp/solar-theme-ghost
-
 /* = Table Of Contents
 --------------------------------------------------------------
 Reset
@@ -109,13 +107,13 @@ footer nav ul li a:before {
 	*display: inline;
 }
 
-.twitter:before {         content: '\f202'; color: #55ACEE; }
-.github:before {          content: '\f200'; color: #ffffff; }
-.wordpress:before {       content: '\f205'; color: #21759b; }
-.rss:before {             content: '\f413'; color: #d54e21; }
+.twitter:before {         content: '\f202'; }
+.github:before {          content: '\f200'; }
+.wordpress:before {       content: '\f205'; }
+.rss:before {             content: '\f413'; }
 .personal:before {        content: '\f442'; }
 
-.googleplus:before {      content: '\f206'; color: #D34836; }
+.googleplus:before {      content: '\f206'; }
 .pocket:before {          content: '\f224'; }
 
 .summary:before {         content: '\f425'; }
@@ -240,12 +238,6 @@ h3 {
 /* = Page structure
 -------------------------------------------------------------- */
 
-header {
-	margin: 40px auto 0 auto;
-	text-align: right;
-	width: 640px;
-}
-
 #page {
 	clear: both;
 	width: 640px;
@@ -282,9 +274,27 @@ header {
 /* = Header
 -------------------------------------------------------------- */
 
-header h1,
-header #blog-logo {
-	float: left;
+header {
+	background: #1d1f21;
+	background-position: 50% 50%;
+	webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+	padding: 0.01em 0 1em;
+	position: relative;
+}
+
+header h1 {
+	font-size: 3em;
+	padding: 4rem 0 7rem;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+header h1 a {
+	border-bottom: 0 none;
+	text-decoration: none;
 }
 
 
@@ -293,6 +303,11 @@ header #blog-logo {
 
 article {
 	margin-bottom: 40px;
+}
+
+.home-template article {
+	padding: 0 0 1rem 0;
+	border-bottom: 1px solid #efefef;
 }
 
 article h1 a {
@@ -359,6 +374,7 @@ img.center {
 
 footer nav {
 	display: inline-block;
+	margin-left: 15px;
 }
 
 footer nav ul {
@@ -371,15 +387,46 @@ footer nav li {
 	display: inline;
 }
 
-footer nav a {
+footer nav a,
+footer nav a:active,
+footer nav a:visited {
 	border-bottom: 0.35rem solid transparent;
-	color: #4271ae;
+	color: #c5c8c6;
 	-webkit-transition: border-color .25s ease-in-out;
 	display: inline-block;
 	position: relative;
 	text-align: center;
 	width: 32px;
 	height: 32px;
+}
+
+footer nav a:hover {
+	background: 0 none;
+}
+
+footer nav a.twitter:hover {  
+	color: #55ACEE;
+	border-color: #55ACEE;
+}
+footer nav a.github:hover {
+	color: #ffffff;
+	border-color: #ffffff;
+}
+footer nav a.wordpress:hover {
+	color: #21759b;
+	border-color: #21759b;
+}
+footer nav a.personal:hover {
+	color: #ffffff;
+	border-color: #ffffff;
+}
+footer nav a.rss:hover {
+	color: #d54e21;
+	border-color: #d54e21;
+}
+footer nav a.googleplus:hover {
+	color: #D34836;
+	border-color: #D34836;
 }
 
 footer nav ul li a:before {
@@ -408,7 +455,8 @@ footer .author img.avatar-image {
 
 footer .author .author-name {
 	font-size: 2.5em;
-	line-height: 2em;
+	margin: 1.5rem 0 0;
+	padding-bottom: 1.5rem;
 }
 
 footer .author .author-bio {
