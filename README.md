@@ -14,9 +14,10 @@ Installation
 1. Clone the repository and upload the `fantome` directory to your Ghost blog's `content/themes` folder.
 2. Add in your Social media profiles in `partials/social.hbs`, and in the `head` of `default.hbs`
 3. Add in your Google Analytics UA tag in `default.hbs`
-4. Go to the Settings page of the Ghost backend and select `fantome` from the Theme dropdown.
-5. Restart Ghost
-6. Enjoy!
+4. Change your contact details at the bottom of `post.hbs`
+5. Go to the Settings page of the Ghost backend and select `fantome` from the Theme dropdown.
+6. Restart Ghost
+7. Enjoy!
 
 
 Customization
