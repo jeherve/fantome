@@ -338,6 +338,10 @@ article img {
 	margin: 0 auto 1em auto;
 }
 
+article iframe {
+	max-width: 100%;
+}
+
 article .meta {
 	padding-top: 6px;
 	font-size: 0.85em;
