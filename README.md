@@ -12,7 +12,7 @@ It's a simple theme, including some features you may find useful:
 Installation
 --------------
 
-1. Clone the repository and upload the `fantome` directory to your Ghost blog's `content/themes` folder.
+1. Clone the repository and upload the `fantome` directory to your Ghost blog's `content/themes` folder. If you don't use Git, you can also download the theme [here](https://github.com/jeherve/fantome/archive/master.zip).
 2. Add in your Social media profiles in `partials/social.hbs`, and in the `head` of `default.hbs`
 3. Add in your Google Analytics UA tag in `default.hbs`
 4. Change your contact details at the bottom of `post.hbs`
