@@ -9,6 +9,8 @@ It's a simple theme, including some features you may find useful:
 - Responsive everything, in fact!
 - Featured Images
 
+![Fantome Ghosts Theme](/assets/img/screenshot.pngg "Here is how Fantome looks like!")
+
 Installation
 --------------
 
